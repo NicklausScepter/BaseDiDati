@@ -1,0 +1,80 @@
+
+/* background image */
+
+html{
+    background-image = "appunti.jpg";
+	height:100%;
+	width:100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+/* menu bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d9d9d9;
+}
+
+/* login/register style */
+
+input[type=submit]
+{
+    font-size: 20px; 
+    background-color: #C0C0C0;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+	width: 600px;
+	padding: 16px;
+	margin: 10% auto;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+

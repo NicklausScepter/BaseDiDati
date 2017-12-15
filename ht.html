@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Base Project</title>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <link rel="stylesheet" href="StyleSheet.css" type="text/css"/>
+    </head>
+    <body>
+        
+        <pre> bla bla </pre>
+        
+        
+        <h1 class="headingstile1">This is a heading 1</h1>
+        <h2>This is a heading 2</h2>
+        <p>This text is <b>bold</b></p>
+        <p>This text is <i>italic</i></p>
+        <p>This text is <b><i>italic and bold</i></b></p>
+        <p>linebreak <br/> linebreak <br/> linebreak</p>
+        <p> more space between: 1&nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp;2</p>
+        <p>Horrizontal line</p><hr/>
+        <!--comment-->
+        <a href="newhtml.html" class="speciallink">This is a link</a><br/>
+        <a href="newhtml.html" class="speciallink">This is a link</a><br/>
+        <a href="newhtml.html" class="speciallink">This is a link</a>
+        <br/><br/><br/>
+        
+        <p><b>This is a table</b></p>
+        <table  border="6">
+            <tr> <!--Table row-->
+                <td>Row 1 data 1</td> <!--Table data-->
+                <td>Row 1 data 2</td>
+                <td rowspan="2"> 
+                    <table border="3"><!--a table inside a table data-->
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Row 2 data 1</td>
+            </tr>
+        </table>
+        
+        
+        <!--List in HTML-->
+        <p><b>Unordered list</b></p>
+        <ul> 
+            <li> <!--list item-->
+                <ol>
+                    <li>Data1.1 &nbsp;&nbsp;&nbsp; <-list inside a list</li>
+                    <li>Data1.2</li>
+                </ol>
+            </li> 
+            <li>Data2</li>
+            <li>Data3</li>
+        </ul>
+        
+        <p><b>Ordered list</b></p>
+        <ol>
+            <li>Data1</li>
+            <li>Data2</li>
+            <li>Data3</li>
+        </ol>
+        
+        <p><b>Definition list</b></p>
+        <dl>
+            <dt>Data1</dt> <!--list item for definition list-->
+            <dd>A nice and white dog</dd> <!--description tag-->
+            <dt>Data2</dt>
+            <dd>A nice and white cat</dd>
+        </dl>
+        
+        <p><b>Zip files and PDF files</b></p>
+        <a href="newdoc.pdf">PDFdownload</a><br/><br/>
+        
+        <iframe src ="http://www.google.com/" height="300" width="300" name="iframe1"></iframe>
+        <a href="http://www.google.com/" target="iframe1">Link to google</a>
+        <a href="newhtml.html" target="iframe1">Link to rocket site</a>
+    
+        <p>Form</p>
+        
+        <form id="myform">
+            Name:   <input type="text" maxlength="10"/><br/>
+            Male:   <input type="radio" name="gender" value="male"/>
+            female: <input type="radio" name="gender" value="female"/><br/>
+            Dog:    <input type="checkbox" name="pet" value="dog"/>
+            Cat:    <input type="checkbox" name="pet" value="cat"><br/>
+            <select name="colours">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+            </select><br/>
+            Comment:<br/>
+            <textarea cols="20" rows="5"></textarea><br/>
+            Password: <input type="password" maxlength="8"/><br/>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="delete all"/><br/><br/>
+        </form>
+        
+        <p>CSS</p>
+        
+        <p style="color:#cc0000; background-color:#CCC"> This text is styled with inline </p>
+        
+        <p>table style with CSS</p>
+        
+        Inline:
+        <table style="background-color: #000 ; width: 300px ; height: 300px">
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        <br/><br/>
+        Stylesheet:
+        <table id="tablestyle1">
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+        
+        <br/><br/><br/>
+        Div tags:
+        
+        <!--Wrapper div-->
+        <div id="wrapper">
+            
+        <!--Header div-->
+        <div id="header"></div>
+        <!--Menu div-->
+        <div id="menu">This is the menu</div>
+        <!--Content div-->
+        <div id="content">This is content</div>
+        
+        </div>
+        
+        <br/><br/><br/>
+        Table styling in CSS:
+        <br/><br/>
+        <table id="sample">
+            <tr>
+                <th class="tableheader"> Heading 1 </th>
+                <th class="tableheader"> Heading 2 </th>
+            </tr>
+            <tr>
+                <td class="tdgrey"> Data 1 </td>
+                <td class="tdgrey"> Data 2 </td>
+            </tr>
+            <tr>
+                <td class="tdwhite"> Data 1 </td>
+                <td class="tdwhite"> Data 2 </td>
+            </tr>
+        </table>
+        
+        <br/><br/><br/>
+        List styling in CSS
+        <br/>
+        
+        <ul>
+            <li>Data 1</li>
+            <li id="lispecial">Data 2</li>
+        </ul>
+        
+        <br/><br/><br/>
+        Simple CSS navigationbar
+        <br/>
+        
+        <ul id="nav">
+            <li class="linav"><a href="#" class="nav">HOME</a></li>
+            <li class="linav"><a href="#" class="nav">ABOUT</a></li>
+            <li class="linav"><a href="#" class="nav">NEWS</a></li>
+            <li class="linav"><a href="#" class="nav">CONTACT</a></li>
+        </ul>
+    </body>
+</html>

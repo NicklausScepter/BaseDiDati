@@ -1,0 +1,165 @@
+body {
+    background-color: #ccffff;
+    background-image: url(light-blue-abstract-full-HD-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p{
+    color: navy;
+    background-color: #CCC;
+}
+
+#tablestyle1{
+    background-image: url(c17e641dfba18fd4099a861274cf0bed.jpg);
+    width: 300px;
+    height: 300px;
+}
+
+h1.headingstile1{
+    color: #cc0000;
+    background-color: appworkspace;
+    font-family: "Times new roman";
+    font-size: 20px;
+}
+
+a.speciallink:link{
+    color: #CCC;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.speciallink:visited{
+    color: #cc0000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.speciallink:hover{
+    color: #cc0000;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a.speciallink:active{
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#wrapper{
+    width: 700px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: thin;
+}
+
+#header{
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: thin;
+    background-color: #CCC;
+}
+
+#menu{
+    width: 100px;
+    height: 600px;
+    margin-left: 50px;
+    border-style: solid;
+    border-width: thin;
+    float: left;
+}
+
+#content{
+    width: 475px;
+    height: 600px;
+    margin-right: 50px;
+    border-style: solid;
+    border-width: thin;
+    float: right;
+}
+
+table#sample{
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    border-collapse: collapse;
+}
+
+.tableheader{
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #FF0;
+    border-color: #000;
+    border-style: solid;
+    border-width: thin;
+    color: #000;
+}
+
+.tdgrey{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #999;
+    border-color: #000;
+    border-style: solid;
+    border-width: thin;
+    color: #FFF;
+}
+
+.tdwhite{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #FFF;
+    border-color: #000;
+    border-style: solid;
+    border-width: thin;
+    color: #999;
+}
+
+/*
+List styling in CSS 
+ul{
+    list-style-type: none;
+    background-color: #999;
+    width: 100px;
+    padding-left: 0px;
+}
+
+li{
+    background-color: #999;
+    float: left;
+}
+*/
+#lispecial{
+    background-color: #FF0;
+}
+
+#nav{
+    list-style-type: none;
+    padding: 0px;
+    width: 840px;
+}
+.linav{
+    float: left;
+}
+a.nav:link, a.nav:visited {
+    display: block;
+    width: 200px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #999;
+    text-align: center;
+    padding: 5px;
+}
+a.nav:hover, a.nav:active{
+    background-color: #CCC;
+}
