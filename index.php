@@ -10,8 +10,7 @@
     
     <body>
         
-	<h1>CIAO WANG !! </h1>
-        <p> hello world </p>
+	<h1> HELLO WANG !!! <h1>
 		<div class="container" style = "background-color: #ffffff">
             <center><h1><b>SITO_APPUNTI</b></h1></center>
             <!-- login -->
