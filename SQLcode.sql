@@ -14,6 +14,7 @@ create table utenti (
 
 create table corsi (
     nome text not null,
+    descrizione_corso text not null,
     primary key (nome) 
 );	
 
@@ -22,7 +23,7 @@ create table lezioni (
     corso text not null,
     data date not null, 
     argomento text not null,
-    primary key(id),
+    primary key(id)
 );
 
 create table appunti (
@@ -30,7 +31,8 @@ create table appunti (
 	data timestamp not null default current_timestamp,
 	idlezione integer not null,
 	autore text,
-	primary key (id), 
+    testo text not null,
+	primary key (id) 
 );
 
 
@@ -64,7 +66,23 @@ create view lista_corsi as
 create or replace function nuovo_utente(u text, p text) returns void as $$
     insert into utenti (username, password) values (u, md5(p));
 $$ language sql;
- 
+
+/* funzione per aggiungere un nuovo corso */
+create or replace function nuovo_corso(n text, d text) returns void as $$
+    insert into corsi (nome, descrizione_corso) values (n, d);
+$$ language sql;
+
+/* funzione per aggiungere una nuova lezione */
+create or replace function nuova_lezione(c text, d date, a text) returns void as $$
+    insert into lezioni (corso, data, argomento) values (n, d);
+$$ language sql;
+
+/* funzione per aggiungere un nuovo appunto */
+create or replace nuovo_appunto(id integer, a text, t text) returns void as $$
+    insert into appunti (idlezione, autore, testo) values (id, a, t);
+$$ language sql;
+
+
 /* per controllare se le credenziali sono valide si applica la funzione md5 
  * alla password passata e si confronta con quella presente nel database,
  * questa funzione restituisce true se le credenziali sono valide e false 
