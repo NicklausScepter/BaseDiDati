@@ -9,10 +9,18 @@
     </head>
     
     <body>
-        
-	<h1> HELLO WANG !!! <h1>
+
 		<div class="container" style = "background-color: #ffffff">
             <center><h1><b>SITO_APPUNTI</b></h1></center>
+            
+            <!-- stampa gli eventuali messaggi di errore, se necessari -->
+            <?php  if ($_GET['errore'] == 'invalide') {
+                echo "<p><font color=red>Le credenziali che hai fornito non sono valide!</font></p>";
+            } elseif ($_GET['errore'] == 'noinput') {
+                echo "<p><font color=red>manca login o/e password!</font>i</p>";
+            }
+            ?>
+            
             <!-- login -->
             <form action="login.php" method="post">
                 <label><b>Username</b></label>
@@ -29,14 +37,6 @@
 			<a href="register.php"><button style="background-color: #ffcc00"><b>Register</b></button></a>
             
 		</div>
-        
-        <!-- stampa gli eventuali messaggi di errore, se necessari -->
-        <?php  if ($_GET['errore'] == 'invalide') {
-            echo "<p><font color=red>Le credenziali che hai fornito non sono valide!</font></p>";
-        } elseif ($_GET['errore'] == 'noinput') {
-            echo "<p><font color=red>manca login o/e password!</font>i</p>";
-        }
-        ?>
         
     </body>
     
