@@ -45,6 +45,7 @@ add foreign key (autore) references utenti
 alter table appunti
 add foreign key (idlezione) references lezioni; 
 
+
 /* esempio di vista */
 drop view if exists lista_corsi cascade;
 
@@ -52,3 +53,42 @@ create view lista_corsi as
     select nome
     from corsi
     order by nome;
+    
+
+/* per creare un nuovo utente si prende la password fornita dal utente e si 
+ * inserisce nel data base il risultato dell'applicazione della funzione di hash
+ * crittografico md5 alla password. Usando questa funzione se uno acceda alla 
+ * database NON potra' vedere le password inserite ma solo il loro hash che 
+ * essendo non invertivile non permette di risalire alla password 
+ */
+create or replace function nuovo_utente(u text, p text) returns void as $$
+    insert into utenti (username, password) values (u, md5(p));
+$$ language sql;
+ 
+/* per controllare se le credenziali sono valide si applica la funzione md5 
+ * alla password passata e si confronta con quella presente nel database,
+ * questa funzione restituisce true se le credenziali sono valide e false 
+ * altrimenti
+ */
+create or replace function credenziali_valide(u text, p text) returns boolean as $$
+declare
+    pwd text;
+begin
+    select password into pwd from utenti where u = username;
+    if md5(p) = pwd 
+        then return true;
+        else return false;
+    end if;
+end;
+$$ language plpgsql;
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
