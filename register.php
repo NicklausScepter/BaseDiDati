@@ -3,7 +3,7 @@
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Registrazione al Sito di Appunti</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="cssstyles.css">
 	</head>
 	<body>
 		<!-- Register -->
@@ -26,7 +26,7 @@
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
                 <label><b>Repeat Password</b></label>
-                <input type="password" placeholder="Enter Password" name="rpsw" required>
+                <input type="password" placeholder="Reenter Password" name="rpsw" required>
                 <button type="submit" value="iscrivimi">Register</button>
             </form>
 		</div>
