@@ -74,11 +74,11 @@ $$ language sql;
 
 /* funzione per aggiungere una nuova lezione */
 create or replace function nuova_lezione(c text, d date, a text) returns void as $$
-    insert into lezioni (corso, data, argomento) values (n, d);
+    insert into lezioni (corso, data, argomento) values (c, d, a);
 $$ language sql;
 
 /* funzione per aggiungere un nuovo appunto */
-create or replace nuovo_appunto(id integer, a text, t text) returns void as $$
+create or replace function nuovo_appunto(id integer, a text, t text) returns void as $$
     insert into appunti (idlezione, autore, testo) values (id, a, t);
 $$ language sql;
 

@@ -1,2 +1,3 @@
 scp -r /var/www/html/BaseDiDati nbuzduga@squit.dsi.unive.it:/wwwstud/nbuzduga
+scp -r /Library/WebServer/Documents/BaseDiDati wwang@squit.dsi.unive.it:/wwwstud/wwang 
 
