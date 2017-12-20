@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 function controllo_accesso(){
     session_start();
-    if (empty($_SESSION['nome_utente'])) {
+    if (empty($_SESSION['user'])) {
         header('Location:index.php');
     }
 }

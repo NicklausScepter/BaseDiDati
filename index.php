@@ -17,17 +17,17 @@
             <?php  if ($_GET['errore'] == 'invalide') {
                 echo "<p><font color=red>Le credenziali che hai fornito non sono valide!</font></p>";
             } elseif ($_GET['errore'] == 'noinput') {
-                echo "<p><font color=red>manca login o/e password!</font>i</p>";
+                echo "<p><font color=red>manca username o/e password!</font></p>";
             }
             ?>
             
             <!-- login -->
             <form action="login.php" method="post">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="login">
+                <input type="text" placeholder="Enter Username" name="uname">
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password">
+                <input type="password" placeholder="Enter Password" name="pwd">
 
                 <button type="submit"><b>Login</b></button>
             </form>

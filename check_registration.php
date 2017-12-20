@@ -1,5 +1,5 @@
 <?php
-require "libreria.php";
+require "lib.php";
 
 if (empty($_POST['uname']) || empty($_POST['psw']) || empty($_POST['rpsw'])) {
     header('Location:register.php?errore=mancainput');
@@ -15,7 +15,7 @@ try{
           header('Location:register.php?errore=utenteesistente');
       } else {
           session_start();
-          $_SESSION['nome_utente'] = $_POST['uname'];
+          $_SESSION['user'] = $_POST['uname'];
           $stat = $dbconn->prepare('select nuovo_utente(?,?)');
           $stat->execute(array($_POST['uname'],$_POST['psw']));
           header('Location:Home.php');

@@ -14,7 +14,7 @@ controllo_accesso();
 		<!-- menu bar -->
 		<ul>	
 			<li><a href="Home.php">HOME</a></li>
-            <li>Benvenuto <b><?php echo $_SESSION['nome_utente']?></b>!</li>
+            <li>Benvenuto <b><?php echo $_SESSION['user']?></b>!</li>
 			<li><a href="index.php">Logout</a></li>
 		</ul>
 

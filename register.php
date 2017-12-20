@@ -15,7 +15,7 @@
             } elseif ($_GET['errore'] == 'mancainput') {
                   echo "<font color=red>Devi dare un <b><u>username</u></b> e ripetere la password ripetuta due volte!</font>";
             } elseif ($_GET['errore'] == 'passworddiverse') {
-                    echo "<font color=red>Le due password non coincidono!";
+                    echo "<font color=red>Le due password non coincidono!</font>";
             }; 
             ?>
             

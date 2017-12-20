@@ -1,4 +1,2 @@
-<!-- menu bar -->
-		<ul>	
-			<li><a href="HOME1.php">HOME</a></li>
-		</ul>
+scp -r /var/www/html/BaseDiDati nbuzduga@squit.dsi.unive.it:/wwwstud/nbuzduga
+
