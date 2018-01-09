@@ -13,15 +13,14 @@ controllo_accesso();
 		
 		<!-- menu bar -->
 		<ul>	
-			<li><a href="Home.php">HOME</a></li>
 			<li id="logout"><a href="index.php">Logout</a></li>
 		</ul>
 
-		<div class="container" style = "background-color: #ffffff">
+		<div class="container" >
 			<a href="ElencoCorsi.php">
-			<button style="background-color: #ffcc00"><b>CERCA APPUNTI</b></button></a>
+			<button style="background-color: green"><b>CERCA APPUNTI</b></button></a>
 			<a href="#">
-			<button style="background-color: #ffcc00"><b>AGGIUNGI CORSI/APPUNTI</b></button></a>
+			<button style="background-color: green"><b>AGGIUNGI CORSI/APPUNTI</b></button></a>
 		</div>
 	</body>
 </html>
