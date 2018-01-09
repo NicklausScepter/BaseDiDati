@@ -78,3 +78,6 @@ span.psw {
 	padding-top: 16px;
 }
 
+#logout{
+    float:right !important;
+}

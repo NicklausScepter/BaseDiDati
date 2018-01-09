@@ -12,16 +12,25 @@ controllo_accesso();
 	<body>
 		
 		<!-- menu bar -->
-		<ul>	
+		<ul>
+            
 			<li><a href="Home.php">HOME</a></li>
 			<li id="logout"><a href="index.php">Logout</a></li>
 		</ul>
-
+        
 		<div class="container" style = "background-color: #ffffff">
-			<a href="ElencoCorsi.php">
-			<button style="background-color: #ffcc00"><b>CERCA APPUNTI</b></button></a>
-			<a href="#">
-			<button style="background-color: #ffcc00"><b>AGGIUNGI CORSI/APPUNTI</b></button></a>
+            <?php
+            try{
+                $dbconn = connessione();
+                $corsi = $dbconn->prepare('lista_corsi');
+                foreach ($corsi as $corso){
+                    echo "<a href='#'>
+			<button style='background-color: #ffcc00'><b>$corso</b></button></a>";
+                }
+            }
+            catch(PDOException $e) { echo $e->getMessage();}
+            ?>
+		
 		</div>
 	</body>
 </html>
