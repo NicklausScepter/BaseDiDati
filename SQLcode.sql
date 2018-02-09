@@ -100,6 +100,17 @@ begin
 end;
 $$ language plpgsql;
  
+create or replace function nome_corso_valido(n text) returns boolean as $$
+declare
+    num int;
+begin
+    select count(*) into num from corsi where corsi.nome = n;
+    if num = 0
+        then return true;
+        else return false;
+    end if;
+end;
+$$ language plpgsql;
     
     
     

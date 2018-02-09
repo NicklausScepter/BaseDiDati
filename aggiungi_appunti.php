@@ -6,7 +6,7 @@ controllo_accesso();
 <html>
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>Sito appunti</title>
+		<title>aggungi appunti</title>
 		<link rel="stylesheet" type="text/css" href="cssstyles.css">
 	</head>
 	<body>
@@ -20,8 +20,8 @@ controllo_accesso();
 		</ul>
 
 		<br><br><br>
-        
 		<?php 
+        /*
             error_reporting(E_ALL & ~E_NOTICE); 
             try { 
                 $dbconn = connessione() ; 
@@ -38,6 +38,7 @@ controllo_accesso();
                     echo "</table></center>"; 
                 } 
             catch (PDOException $e) { echo $e -> getMessage(); } 
+            */
         ?>
         
 	</body>

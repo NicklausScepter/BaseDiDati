@@ -73,6 +73,10 @@ button:hover {
 	margin: 10% auto;
 }
 
+.container button{
+    border-radius: 10px;
+}
+
 span.psw {
 	float: right;
 	padding-top: 16px;
@@ -80,4 +84,43 @@ span.psw {
 
 #logout{
     float:right !important;
+    margin-right: 20px;
+}
+
+table, th, td {
+	background-color: white;
+   border: 2px solid black;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#navbar li{
+    background-color: deepskyblue;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#navbar li a:hover{
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+#navbar{
+    background-color: transparent;
+}
+
+.inlineinput div {
+    display: inline;
+}
+
+.nuovalezione{
+    width: 600px;
+	padding: 16px;
+	margin: 1% auto;
+}
+
+.nuovalezione button{
+    border-radius: 10px;
 }
